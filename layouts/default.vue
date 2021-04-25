@@ -1,12 +1,27 @@
 <template>
-  <div>
+  <div style="position: relative; width: 100%;">
+    <HeaderDefault />
     <Nuxt />
+    <FooterDefault />
   </div>
 </template>
+
+<script>
+import HeaderDefault from '../components/layout/HeaderDefault'
+import FooterDefault from '../components/layout/FooterDefault'
+export default {
+  components: {
+    HeaderDefault,
+    FooterDefault
+  }
+}
+</script>
 
 <style>
 html {
   font-family:
+    'Noto Sans TC',
+    'Manrope',
     'Source Sans Pro',
     -apple-system,
     BlinkMacSystemFont,
@@ -29,6 +44,20 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+
+  font-family:
+    'Noto Sans TC',
+    'Manrope',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+
+  letter-spacing: 0.05em;
 }
 
 .button--green {
@@ -58,5 +87,15 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration-line: none;
+  color: inherit;
 }
 </style>
