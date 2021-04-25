@@ -49,6 +49,7 @@
         </div>
     </div>
 </template>
+
 <style scoped>
 
     .header-default {
