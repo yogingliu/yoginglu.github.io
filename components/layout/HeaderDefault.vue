@@ -3,7 +3,8 @@
         <div class="header-default">
             <div class="header-flex-block-default">
                 <div class="header-logo-block-default">
-                    <img src="雨耕2 1.png" alt="logo" class="header-logo-img-default">
+                    <!-- <img src="雨耕2 1.png" alt="logo" class="header-logo-img-default"> -->
+                    <LogoWithName class="header-logo-img-default" />
                 </div>
                 <div class="header-nav-bar-default">
                     <div class="header-nav-block-default">
@@ -49,6 +50,14 @@
         </div>
     </div>
 </template>
+<script>
+import LogoWithName from '../svgTemplate/LogoWithName'
+export default {
+    components: {
+        LogoWithName
+    }
+}
+</script>
 
 <style scoped>
 
