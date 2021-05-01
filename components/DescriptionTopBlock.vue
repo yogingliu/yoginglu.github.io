@@ -12,7 +12,7 @@
                 我們具備專業的團隊以及完整的服務 <br>
                 用最專業的方式協助你的升學計畫 <br>
             </p>
-            <a href="" class="description-top-shop-link">
+            <a href="https://shopee.tw/concisewriter?categoryId=68&itemId=8423664475" class="description-top-shop-link">
                 <div>
                     <span class="top-shop-link-text">前往</span>
                     <SvgLogoShopee class="top-shop-logo-default d-inline-block" />

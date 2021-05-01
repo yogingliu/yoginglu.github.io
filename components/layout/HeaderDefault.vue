@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="header-cta-link-block-default">
-                    <a href="" class="cta-link-default">
+                    <a href="https://shopee.tw/concisewriter?categoryId=68&itemId=8423664475" class="cta-link-default">
                         <span class="cta-link-text">前往</span>
                         <SvgLogoShopee class="cta-shopee-logo-default" />
                         <span class="cta-link-text text-color-shopp">蝦皮購物</span>
