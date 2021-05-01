@@ -98,4 +98,8 @@ a:hover {
   text-decoration-line: none;
   color: inherit;
 }
+
+.text-color-shopp {
+  color: #ee4d2d;
+}
 </style>

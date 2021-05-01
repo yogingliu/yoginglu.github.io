@@ -3,8 +3,7 @@
         <div class="header-default">
             <div class="header-flex-block-default">
                 <div class="header-logo-block-default">
-                    <!-- <img src="雨耕2 1.png" alt="logo" class="header-logo-img-default"> -->
-                    <LogoWithName class="header-logo-img-default" />
+                    <SvgLogoYugengWithName class="header-logo-img-default" />
                 </div>
                 <div class="header-nav-bar-default">
                     <div class="header-nav-block-default">
@@ -40,7 +39,9 @@
                 </div>
                 <div class="header-cta-link-block-default">
                     <a href="" class="cta-link-default">
-                        <span class="cta-link-text">前往</span><img class="cta-shopee-logo-default" src="Shopee.png" alt="Shopee Logo"><span class="cta-link-text" style="color: #ee4d2d;">蝦皮購物</span>
+                        <span class="cta-link-text">前往</span>
+                        <SvgLogoShopee class="cta-shopee-logo-default" />
+                        <span class="cta-link-text text-color-shopp">蝦皮購物</span>
                     </a>
                 </div>
             </div>
@@ -51,10 +52,12 @@
     </div>
 </template>
 <script>
-import LogoWithName from '../svgTemplate/LogoWithName'
+import SvgLogoYugengWithName from '../svgTemplate/SvgLogoYugengWithName'
+import SvgLogoShopee from '../svgTemplate/SvgLogoShopee'
 export default {
     components: {
-        LogoWithName
+        SvgLogoYugengWithName,
+        SvgLogoShopee
     }
 }
 </script>
@@ -70,6 +73,7 @@ export default {
         height: 95px;
         background: #FFFFFF;
         box-shadow: 0px 1px 0px #E5E9F2;
+        z-index: 1;
     }
 
     .header-flex-block-default {
@@ -109,7 +113,7 @@ export default {
     .cta-shopee-logo-default {
         width: 15px;
         height: 20.8px;
-        margin: 3px 3px 0 3px;
+        margin: 0 3px;
     }
 
     .header-nav-bar-default {

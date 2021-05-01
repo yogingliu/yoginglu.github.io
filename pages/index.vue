@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <DescriptionMainBlock />
+    <DescriptionTopBlock />
   </div>
 </template>
 
 <script>
-import DescriptionMainBlock from '../components/DescriptionMainBlock'
+import DescriptionTopBlock from '../components/DescriptionTopBlock'
 export default {
   components: {
-    DescriptionMainBlock
+    DescriptionTopBlock
   }
 }
 </script>
@@ -23,4 +23,5 @@ export default {
   align-items: center;
   text-align: center;
 }
+
 </style>
