@@ -1,15 +1,18 @@
 <template>
   <div class="container">
     <DescriptionTopBlock />
+    <TipDemoBlock />
   </div>
 </template>
 
 <script>
 import DescriptionTopBlock from '../components/DescriptionTopBlock'
+import TipDemoBlock from '../components/TipDemoBlock.vue'
 export default {
   components: {
-    DescriptionTopBlock
-  }
+    DescriptionTopBlock,
+    TipDemoBlock
+  },
 }
 </script>
 
@@ -18,9 +21,9 @@ export default {
   max-width: 1220px;
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
 }
 

@@ -1,0 +1,1 @@
+複製 svg 時，figma 下載預設都是重複的會衝突，要注意 pattern 的 id 與 use xlink:href 後面的 image 0 要更改為自定義避免衝突，兩個 id 都各有兩處使用，要留意。

@@ -31,6 +31,9 @@ export default {
   plugins: [
   ],
 
+  server: {
+    port: 8578 // default: 3000
+  },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
