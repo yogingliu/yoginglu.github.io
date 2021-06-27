@@ -54,13 +54,13 @@ export default {
     .description-top-right-background {
         position: absolute;
         bottom: 105px;
-        left: 0;
+        right: 0;
         z-index: -1;
     }
 
     .description-top-right-image {
         position: relative;
-        margin-top: 130px;
+        margin: 130px 0 0 155px;
         width: 484px;
         height: 330px;
     }
@@ -72,7 +72,7 @@ export default {
 
     .description-top-main-block {
         /* margin: 165px 0 150px 0; */
-        margin: 185px 0 150px 0;
+        margin: 185px 0 150px 150px;
         width: 580px;
         height: 350px;
         text-align: left;

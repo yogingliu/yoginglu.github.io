@@ -1,17 +1,23 @@
 <template>
-  <div class="container">
+  <div>
     <DescriptionTopBlock />
-    <TipDemoBlock />
+    <div class="container">
+      
+      <TipDemoBlock />
+      <ProductFeature />
+    </div>
   </div>
 </template>
 
 <script>
-import DescriptionTopBlock from '../components/DescriptionTopBlock'
+import DescriptionTopBlock from '../components/DescriptionTopBlock.vue'
 import TipDemoBlock from '../components/TipDemoBlock.vue'
+import ProductFeature from '../components/ProductFeature.vue'
 export default {
   components: {
     DescriptionTopBlock,
-    TipDemoBlock
+    TipDemoBlock,
+    ProductFeature
   },
 }
 </script>
