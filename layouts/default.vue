@@ -58,6 +58,7 @@ html {
     sans-serif;
 
   letter-spacing: 0.05em;
+  font-weight: bold;
 }
 
 .button--green {
@@ -101,5 +102,10 @@ a:hover {
 
 .text-color-shopp {
   color: #ee4d2d;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: bold;
 }
 </style>

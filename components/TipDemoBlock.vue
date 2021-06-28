@@ -84,6 +84,7 @@ export default {
 
     .text-move-for-phone-shadow {
         padding-right: 25px;
+        margin-bottom: 0;
     }
 
     .tip-arrow-block {
