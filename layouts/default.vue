@@ -108,4 +108,8 @@ h1, h2, h3 {
   margin: 0;
   font-weight: bold;
 }
+
+p {
+  margin: 0;
+}
 </style>
