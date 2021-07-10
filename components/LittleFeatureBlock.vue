@@ -39,6 +39,7 @@ export default {
         width: 40px;
         height: 40px;
         margin: 0 auto;
+        fill: #4981B6;
     }
 
     .little-feature-card-title-text {
