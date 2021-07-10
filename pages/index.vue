@@ -5,6 +5,7 @@
       
       <TipDemoBlock />
       <ProductFeature />
+      <ServiceProcess />
     </div>
   </div>
 </template>
@@ -13,6 +14,7 @@
 import DescriptionTopBlock from '../components/DescriptionTopBlock.vue'
 import TipDemoBlock from '../components/TipDemoBlock.vue'
 import ProductFeature from '../components/ProductFeature.vue'
+import ServiceProcess from '../components/ServiceProcess.vue'
 export default {
   components: {
     DescriptionTopBlock,
