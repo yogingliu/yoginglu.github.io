@@ -6,6 +6,8 @@
       <TipDemoBlock />
       <ProductFeature />
       <ServiceProcess />
+      <ServicePlanBlock />
+      <ClassicSampleBlock />
     </div>
   </div>
 </template>
@@ -15,11 +17,16 @@ import DescriptionTopBlock from '../components/DescriptionTopBlock.vue'
 import TipDemoBlock from '../components/TipDemoBlock.vue'
 import ProductFeature from '../components/ProductFeature.vue'
 import ServiceProcess from '../components/ServiceProcess.vue'
+import ServicePlanBlock from '../components/ServicePlanBlock.vue'
+import ClassicSampleBlock from '../components/ClassicSampleBlock.vue'
 export default {
   components: {
     DescriptionTopBlock,
     TipDemoBlock,
-    ProductFeature
+    ProductFeature,
+    ServiceProcess,
+    ServicePlanBlock,
+    ClassicSampleBlock
   },
 }
 </script>
