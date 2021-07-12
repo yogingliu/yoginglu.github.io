@@ -4,7 +4,6 @@
             <div class="circle-index-service-process">{{indexNum}}</div>
         </div>
         <div class="right-main-block-service-process col-8">
-            <!-- 抄商品特色來改的 要修改 -->
             <div class="title-block-service-process">
                 <div class="service-process-card-icon-block">
                     <component :is="titleIconComponent" class="card-title-icon-service-process"/>
