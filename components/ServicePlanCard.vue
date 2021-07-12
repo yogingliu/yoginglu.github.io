@@ -1,14 +1,11 @@
 <template>
     <div class="service-plan-card">
-        <div class="service-plan-border-bottom-block text-left mx-4 px-3">
-            <div class="font-size-2 py-3">NT$6000</div>
-            <div :style="{ color: `#4981B6` }" class="font-size-1-point-4 my-2">完整備審資料代製</div>
-            <p class="white-space-pre-line my-3 text-description-service-plan-card">依照學校簡章要求製作完整的備審資料
-                完成後的檔案可以直接上傳至學校報名系統
-                檔案格式符合校方規章可以直接至影印店輸出
-                製作時間為十日內交付電子檔</p>
+        <div class="service-plan-border-bottom-block text-left mx-4 px-3 height-30">
+            <div class="font-size-2 py-3">NT${{planPrice}}</div>
+            <div :style="{ color: `${planRepresentColor}` }" class="font-size-1-point-4 my-2">{{planTitle}}</div>
+            <p class="white-space-pre-line my-3 text-description-service-plan-card">{{planDescription}}</p>
         </div>
-        <div class="service-plan-border-bottom-block p-5  mx-4  text-left">
+        <div class="service-plan-border-bottom-block p-5  mx-4  text-left height-50">
             <div
                 v-for="feature in featuresOfProject"
                 :key="`feature-${feature.featureId}`"
@@ -23,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="height-20">
             <div class="mx-4 px-4 py-4">
                 <div class="d-flex justify-content-around my-2">
                     <div v-for="extraPriceCondition in extraPriceConditions"
@@ -31,10 +28,10 @@
                         
                     >
                         <span>{{extraPriceCondition.isPlus? '+':'-'}}</span><span>NT$</span><span>{{extraPriceCondition.price}}</span>
-                        <p :style="{ color: `#4981B6` }" class="my-2">{{extraPriceCondition.conditionText}}</p>
+                        <p :style="{ color: `${planRepresentColor}` }" class="my-2">{{extraPriceCondition.conditionText}}</p>
                     </div>
                 </div>
-                <div :style="{ backgroundColor: `#4981B6` }" class="plan-suitable-for-customer-block">
+                <div :style="{ backgroundColor: `${planRepresentColor}` }" class="plan-suitable-for-customer-block">
                     <p>{{suitableText}}</p>
                 </div>
             </div>
@@ -47,43 +44,22 @@ export default {
     components: {
         SvgIconTick
     },
-    data() {
-        return {
-            featuresOfProject: [
-                {
-                    isHavingFeature: true,
-                    featureText: '撰寫自傳',
-                    featureId: '1'
-                },
-                {
-                    isHavingFeature: false,
-                    featureText: '沒有打勾',
-                    featureId: '2'
-                }
-            ],
-            extraPriceConditions: [
-                {
-                    id: 1,
-                    isPlus: true,
-                    price: 1500,
-                    conditionText: '碩士班'
-                },
-                {
-                    id: 2,
-                    isPlus: true,
-                    price: 2000,
-                    conditionText: '急件'
-                },
-            ],
-            suitableText: '此方案適合所有申請者'
-        }
+    props: {
+        planRepresentColor: String,
+        planPrice: Number,
+        planTitle: String,
+        planDescription: String,
+        featuresOfProject: Array,
+        extraPriceConditions: Array,
+        suitableText: String
     }
 }
 </script>
 <style scoped>
     .service-plan-card {
         width: 345px;
-        height: 625px;
+        /* height: 625px; */
+        height: 790px;
         border-radius: 42px;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     }
@@ -133,5 +109,17 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .height-30 {
+        height: 40%;
+    }
+
+    .height-50 {
+        height: 35%;
+    }
+
+    .height-20 {
+        height: 25%;
     }
 </style>
