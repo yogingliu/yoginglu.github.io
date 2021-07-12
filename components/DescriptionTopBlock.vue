@@ -1,7 +1,7 @@
 <template>
     <div class="description-top-block d-flex">
         <div class="description-top-main-block">
-            <h1 style="font-weight: bold;">最頂尖的備審資料代製專家</h1>
+            <h1>最頂尖的備審資料代製專家</h1>
             <p class="decription-text-block">
                 即將進行大學申請或是研究所推甄的你 <br>
                 具備了很好的成績以及輝煌的經歷 <br>
