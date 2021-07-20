@@ -8,6 +8,7 @@
       <ServiceProcess />
       <ServicePlanBlock />
       <ClassicSampleBlock />
+      
     </div>
   </div>
 </template>
@@ -42,4 +43,9 @@ export default {
   text-align: center;
 }
 
+.horizontal-vertical-center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 </style>
