@@ -12,15 +12,16 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center flex-column mx-5">
-                <template v-for="(dialogText, dialogIndex) in dialogTexts">
-                    <div
-                        :key="`dialog-text-${dialogBlockIndex}-${dialogIndex}`"
-                        class="dialog-content-block my-2"
-                    >
-                        {{dialogText}}
-                    </div>
-                </template>
+            <div class="d-flex flex-column mx-5">
+                    <template v-for="(dialogText, dialogIndex) in dialogTexts">
+                        <div
+                            :key="`dialog-text-${dialogBlockIndex}-${dialogIndex}`"
+                            class="dialog-content-block my-2 text-left"
+                        >
+                            <span>{{dialogText}}</span>
+                        </div>
+                    </template>
+                
             </div>
         </div>
     </div>
@@ -68,7 +69,6 @@ export default {
     },
     computed: {
         photoComponent() {
-            console.log('photoTypeToComponentUrlConfig[this.photoType]', photoTypeToComponentUrlConfig[this.photoType])
             // 副檔名可以讓 vue 提前縮小動態的範圍
             return () => import(`${photoTypeToComponentUrlConfig[this.photoType]}.vue`)
         }
@@ -89,5 +89,6 @@ export default {
         padding: 0.5rem 1.8rem 0.5rem 1.8rem;
         font-size: .9rem;
         /* font-weight: normal; */
+        white-space: pre-line;
     }
 </style>
