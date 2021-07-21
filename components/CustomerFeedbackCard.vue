@@ -8,17 +8,17 @@
                         <span>{{customerName}}</span>
                     </div>
                     <div>
-                        <span class="text-muted">{{customerRemark}}</span>
+                        <span class="text-muted font-size-point-nine">{{customerRemark}}</span>
                     </div>
                 </div>
                 
             </div>
         </div>
         <div class="d-flex px-5">
-            <div class="mt-3">
+            <div class="mt-3 mx-2">
                 <SvgIconQuote class="feedback-card-quote-icon" />
             </div>
-            <div class="p-4 text-left font-size-point-nine">
+            <div class="pl-4 py-4 text-left font-size-point-nine">
                 {{feedbackContent}}
             </div>
         </div>

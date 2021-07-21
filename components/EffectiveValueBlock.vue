@@ -62,8 +62,3 @@ export default {
         margin: .3rem 0;
     }
 </style>
-<style>
-    .font-size-point-nine {
-        font-size: .9rem;
-    }
-</style>

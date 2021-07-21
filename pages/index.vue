@@ -51,8 +51,12 @@ export default {
 }
 
 .horizontal-vertical-center-flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-size-point-nine {
+    font-size: .9rem;
 }
 </style>
