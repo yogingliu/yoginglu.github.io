@@ -8,7 +8,7 @@
       <ServiceProcess />
       <ServicePlanBlock />
       <ClassicSampleBlock />
-      
+      <CustomerFeedback />
     </div>
   </div>
 </template>
@@ -20,6 +20,7 @@ import ProductFeature from '../components/ProductFeature.vue'
 import ServiceProcess from '../components/ServiceProcess.vue'
 import ServicePlanBlock from '../components/ServicePlanBlock.vue'
 import ClassicSampleBlock from '../components/ClassicSampleBlock.vue'
+import CustomerFeedback from '../components/CustomerFeedback.vue'
 export default {
   components: {
     DescriptionTopBlock,
@@ -27,7 +28,8 @@ export default {
     ProductFeature,
     ServiceProcess,
     ServicePlanBlock,
-    ClassicSampleBlock
+    ClassicSampleBlock,
+    CustomerFeedback
   },
 }
 </script>
