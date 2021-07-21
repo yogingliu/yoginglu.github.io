@@ -15,10 +15,10 @@
             </div>
         </div>
         <div class="d-flex px-5">
-            <div>
+            <div class="mt-3">
                 <SvgIconQuote class="feedback-card-quote-icon" />
             </div>
-            <div class="p-4 text-left">
+            <div class="p-4 text-left font-size-point-nine">
                 {{feedbackContent}}
             </div>
         </div>

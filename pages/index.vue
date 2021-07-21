@@ -10,6 +10,8 @@
       <ClassicSampleBlock />
       <CustomerFeedback />
       <EffectiveValueBlock />
+      <CommonQuestion />
+      <div class="pb-5"></div>
     </div>
   </div>
 </template>
@@ -22,6 +24,7 @@ import ServiceProcess from '../components/ServiceProcess.vue'
 import ServicePlanBlock from '../components/ServicePlanBlock.vue'
 import ClassicSampleBlock from '../components/ClassicSampleBlock.vue'
 import CustomerFeedback from '../components/CustomerFeedback.vue'
+import CommonQuestion from '../components/CommonQuestion.vue'
 export default {
   components: {
     DescriptionTopBlock,
@@ -30,7 +33,8 @@ export default {
     ServiceProcess,
     ServicePlanBlock,
     ClassicSampleBlock,
-    CustomerFeedback
+    CustomerFeedback,
+    CommonQuestion
   },
 }
 </script>
