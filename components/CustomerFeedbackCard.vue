@@ -18,7 +18,7 @@
             <div>
                 <SvgIconQuote class="feedback-card-quote-icon" />
             </div>
-            <div class="p-4 text-left text-sm">
+            <div class="p-4 text-left">
                 {{feedbackContent}}
             </div>
         </div>
@@ -83,5 +83,6 @@ export default {
         width: 1.6rem;
         height: 1.6rem;
     }
+
     
 </style>

@@ -9,6 +9,7 @@
       <ServicePlanBlock />
       <ClassicSampleBlock />
       <CustomerFeedback />
+      <EffectiveValueBlock />
     </div>
   </div>
 </template>
