@@ -1,5 +1,5 @@
 <template>
-    <div class="customer-feedback-card flex-grow-1 mx-2 w-100">
+    <div class="customer-feedback-card flex-grow-1 mx-3 w-100">
         <div class="d-flex w-100 p-4">
             <component class="customer-feedback-card-photo" :is="customerPhotoComponent" />
             <div class="ml-4 text-left d-flex">
