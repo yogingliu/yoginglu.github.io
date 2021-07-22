@@ -1,16 +1,16 @@
 <template>
   <div>
-    <DescriptionTopBlock />
+    <DescriptionTopBlock id="DescriptionTopBlock"/>
     <div class="container">
       
-      <TipDemoBlock />
-      <ProductFeature />
-      <ServiceProcess />
-      <ServicePlanBlock />
-      <ClassicSampleBlock />
-      <CustomerFeedback />
-      <EffectiveValueBlock />
-      <CommonQuestion />
+      <TipDemoBlock id="TipDemoBlock" />
+      <ProductFeature id="ProductFeature" />
+      <ServiceProcess id="ServiceProcess" />
+      <ServicePlanBlock id="ServicePlanBlock" />
+      <ClassicSampleBlock id="ClassicSampleBlock" />
+      <CustomerFeedback id="CustomerFeedback" />
+      <EffectiveValueBlock id="EffectiveValueBlock" />
+      <CommonQuestion id="CommonQuestion" />
       <div class="pb-5"></div>
     </div>
   </div>
@@ -24,6 +24,7 @@ import ServiceProcess from '../components/ServiceProcess.vue'
 import ServicePlanBlock from '../components/ServicePlanBlock.vue'
 import ClassicSampleBlock from '../components/ClassicSampleBlock.vue'
 import CustomerFeedback from '../components/CustomerFeedback.vue'
+import EffectiveValueBlock from '../components/EffectiveValueBlock.vue'
 import CommonQuestion from '../components/CommonQuestion.vue'
 export default {
   components: {
@@ -34,6 +35,7 @@ export default {
     ServicePlanBlock,
     ClassicSampleBlock,
     CustomerFeedback,
+    EffectiveValueBlock,
     CommonQuestion
   },
 }
