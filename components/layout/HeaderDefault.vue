@@ -1,5 +1,5 @@
 <template>
-    <div class="header-container-default w-100">
+    <div class="header-container-default">
         <div class="header-default">
             <div class="header-flex-block-default justify-content-between justify-content-sm-start">
                 <div class="header-logo-block-default">
@@ -55,7 +55,7 @@
                     </a>
                 </div>
                 <!-- 手機板選單按鈕 -->
-                <div class="d-sm-none flex-grow-1 horizontal-vertical-center-flex mr-4">
+                <div class="d-sm-none horizontal-vertical-center-flex mr-4">
                     <button
                         class="header-menu-icon-block p-4"
                         @click="toggleNavBar()"
@@ -95,6 +95,11 @@ export default {
 </script>
 
 <style scoped>
+    .header-container-default {
+        width: 100%;
+    }
+
+    
 
     .header-menu-icon-block {
 
@@ -117,12 +122,24 @@ export default {
         z-index: 1;
     }
 
+    @media screen and (max-width: 576px) {
+        .header-default {
+            width: auto;
+            max-width: 576px;
+            /* width: 100%; */
+        }
+
+        
+    }
+
     .header-flex-block-default {
         width: 100%;
         height: 95px;
         background: #FFFFFF;
         display: flex;
     }
+
+    
     
     .header-cta-link-block-default {
         width: 195px;
