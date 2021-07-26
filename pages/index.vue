@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="position-relative">
     <DescriptionTopBlock id="DescriptionTopBlock"/>
     <div class="container">
       
@@ -41,24 +41,4 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  max-width: 1220px;
-  margin: 0 auto;
-  min-height: 100vh;
-  /* display: flex; */
-  justify-content: center;
-  /* align-items: center; */
-  text-align: center;
-}
 
-.horizontal-vertical-center-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.font-size-point-nine {
-    font-size: .9rem;
-}
-</style>

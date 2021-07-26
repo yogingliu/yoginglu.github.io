@@ -1,6 +1,6 @@
 <template>
     <div>
-        <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg width="100%" height="100%" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <mask id="maskShopee" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="21">
             <rect width="15" height="20.7692" fill="url(#patternShopee)"/>
             </mask>

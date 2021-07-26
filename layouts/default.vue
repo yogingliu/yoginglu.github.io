@@ -39,6 +39,7 @@ html {
   box-sizing: border-box;
 }
 
+
 *,
 *::before,
 *::after {
@@ -59,6 +60,13 @@ html {
 
   letter-spacing: 0.05em;
   font-weight: bold;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+
 }
 
 .button--green {
@@ -111,5 +119,25 @@ h1, h2, h3 {
 
 p {
   margin: 0;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  min-height: 100vh;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.horizontal-vertical-center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-size-point-nine {
+    font-size: .9rem;
 }
 </style>

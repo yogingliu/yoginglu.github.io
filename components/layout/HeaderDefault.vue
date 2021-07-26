@@ -5,44 +5,64 @@
                 <div class="header-logo-block-default">
                     <SvgLogoYugengWithName class="header-logo-img-default" />
                 </div>
-                <div class="header-nav-bar-default">
-                    <div class="header-nav-block-default">
-                        <a href="#ProductFeature" class="header-nav-link-deafault">
-                            商品特色
-                        </a>
+                <div
+                    :class="{
+                        'header-nav-bar-default': true,
+                        'd-sm-flex': true,
+                        'd-none' : !isDisplayNavbarOnSmallSize
+                    }"
+                >
+                    <div class="sm-border-header-nav-bar">
+                        <div class="header-nav-block-default">
+                            <a href="#ProductFeature" class="header-nav-link-deafault">
+                                商品特色
+                            </a>
+                        </div>
+                        <div class="header-nav-block-default">
+                            <a href="#ServiceProcess" class="header-nav-link-deafault">
+                                服務流程
+                            </a>
+                        </div>
+                        <div class="header-nav-block-default">
+                            <a href="#ServicePlanBlock" class="header-nav-link-deafault">
+                                服務項目
+                            </a>
+                        </div>
+                        <div class="header-nav-block-default">
+                            <a href="#ClassicSampleBlock" class="header-nav-link-deafault">
+                                經典範例
+                            </a>
+                        </div>
+                        <div class="header-nav-block-default">
+                            <a href="#CustomerFeedback" class="header-nav-link-deafault">
+                                顧客回饋
+                            </a>
+                        </div>
+                        <div class="header-nav-block-default">
+                            <a href="#CommonQuestion" class="header-nav-link-deafault">
+                                Q&amp;A
+                            </a>
+                        </div>
                     </div>
-                    <div class="header-nav-block-default">
-                        <a href="#ServiceProcess" class="header-nav-link-deafault">
-                            服務流程
-                        </a>
-                    </div>
-                    <div class="header-nav-block-default">
-                        <a href="#ServicePlanBlock" class="header-nav-link-deafault">
-                            服務項目
-                        </a>
-                    </div>
-                    <div class="header-nav-block-default">
-                        <a href="#ClassicSampleBlock" class="header-nav-link-deafault">
-                            經典範例
-                        </a>
-                    </div>
-                    <div class="header-nav-block-default">
-                        <a href="#CustomerFeedback" class="header-nav-link-deafault">
-                            顧客回饋
-                        </a>
-                    </div>
-                    <div class="header-nav-block-default">
-                        <a href="#CommonQuestion" class="header-nav-link-deafault">
-                            Q&amp;A
-                        </a>
-                    </div>
+                    
                 </div>
+                <!-- 前往蝦皮賣場按鈕 -->
                 <div class="header-cta-link-block-default">
                     <a href="https://shopee.tw/concisewriter?categoryId=68&itemId=8423664475" class="cta-link-default">
                         <span class="cta-link-text">前往</span>
                         <SvgLogoShopee class="cta-shopee-logo-default" />
-                        <span class="cta-link-text text-color-shopp">蝦皮購物</span>
+                        <span class="cta-link-text text-color-shopp">蝦皮</span><span class="cta-link-text text-color-shopp">賣場</span>
                     </a>
+                </div>
+                <!-- 手機板選單按鈕 -->
+                <div class="d-sm-none flex-grow-1 horizontal-vertical-center-flex">
+                    <button
+                        class="header-menu-icon-block p-4"
+                        @click="toggleNavBar()"
+                    >
+                        <SvgIconMenu class="header-menu-icon horizontal-vertical-center-flex" />
+                    </button>
+                    
                 </div>
             </div>
         </div>
@@ -52,17 +72,38 @@
     </div>
 </template>
 <script>
-import SvgLogoYugengWithName from '../svgTemplate/SvgLogoYugengWithName'
-import SvgLogoShopee from '../svgTemplate/SvgLogoShopee'
+import SvgLogoYugengWithName from '../svgTemplate/SvgLogoYugengWithName.vue'
+import SvgLogoShopee from '../svgTemplate/SvgLogoShopee.vue'
+import SvgIconMenu from '../svgTemplate/icon/SvgIconMenu.vue'
 export default {
+    data() {
+        return {
+            isDisplayNavbarOnSmallSize: false
+        }
+    },
     components: {
         SvgLogoYugengWithName,
-        SvgLogoShopee
+        SvgLogoShopee,
+        SvgIconMenu
+    },
+    methods: {
+        toggleNavBar() {
+            this.isDisplayNavbarOnSmallSize = !this.isDisplayNavbarOnSmallSize
+        }
     }
 }
 </script>
 
 <style scoped>
+
+    .header-menu-icon-block {
+
+    }
+
+    .header-menu-icon {
+        width: 20px;
+        height: 16px;
+    }
 
     .header-default {
         position: fixed;
@@ -82,7 +123,7 @@ export default {
         background: #FFFFFF;
         display: flex;
     }
-
+    
     .header-cta-link-block-default {
         width: 195px;
         height: 95px;
@@ -90,7 +131,22 @@ export default {
         justify-content: center;
         align-items: center;
         margin-right: 70px;
+
+        
     }
+
+    @media screen and (max-width: 576px) {
+        .header-cta-link-block-default {
+
+            position: fixed;
+            right: 0.3rem;
+            bottom: 0.3rem;
+            margin: 0;
+        }
+
+        
+    }
+
 
     .cta-link-default {
         display: block;
@@ -105,10 +161,18 @@ export default {
         align-items: center;
     }
 
+    /* @media screen and (max-width: 576px) {
+        .cta-link-default {
+            width: 8rem;
+            height: 4rem;
+        }
+    } */
+
     .cta-link-text {
         font-size: 18px;
         font-weight: bold;
     }
+
 
     .cta-shopee-logo-default {
         width: 15px;
@@ -116,10 +180,49 @@ export default {
         margin: 0 3px;
     }
 
+    /* @media screen and (max-width: 576px) {
+        .cta-shopee-logo-default {
+            width: 1.8rem;
+            height: 2rem;
+            margin-top: 5px
+        }
+    } */
+
     .header-nav-bar-default {
         flex: 1;
         display: flex;
         justify-content: flex-end;
+        
+    }
+
+    .sm-border-header-nav-bar {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    @media screen and (max-width: 576px) {
+        .header-nav-bar-default {
+            /* display: none; */
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 96px;
+            /* background-color: #4F4F4F;
+            color: #ffffff; */
+            background-color: #ffffff;
+            color: #4F4F4F;
+            /* padding-left: 4rem; */
+            
+        }
+
+        .sm-border-header-nav-bar {
+            margin: 3rem;
+            padding: 1rem;
+            border-top: 1px solid #4F4F4F;
+            border-bottom: 1px solid #4F4F4F;
+            flex-direction: column;
+        }
     }
 
     .header-nav-block-default {
@@ -129,6 +232,15 @@ export default {
         justify-content: center;
         align-items: center;
         
+    }
+
+    @media screen and (max-width: 576px) {
+        .header-nav-block-default {
+            width: 6rem;
+            /* border-bottom: 1px solid #4F4F4F; */
+            word-spacing: 0.3rem;
+            height: 3rem;
+        }
     }
 
     .header-nav-link-deafault {
