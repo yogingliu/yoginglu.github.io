@@ -62,6 +62,7 @@ export default {
         height: 790px;
         border-radius: 42px;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+        background-color: #ffffff;
     }
 
     .service-plan-border-bottom-block {

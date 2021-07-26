@@ -1,7 +1,7 @@
 <template>
-    <div class="header-container-default">
+    <div class="header-container-default w-100">
         <div class="header-default">
-            <div class="header-flex-block-default">
+            <div class="header-flex-block-default justify-content-between justify-content-sm-start">
                 <div class="header-logo-block-default">
                     <SvgLogoYugengWithName class="header-logo-img-default" />
                 </div>
@@ -14,32 +14,32 @@
                 >
                     <div class="sm-border-header-nav-bar">
                         <div class="header-nav-block-default">
-                            <a href="#ProductFeature" class="header-nav-link-deafault">
+                            <a href="#ProductFeature" class="header-nav-link-deafault" @click="toggleNavBar()">
                                 商品特色
                             </a>
                         </div>
                         <div class="header-nav-block-default">
-                            <a href="#ServiceProcess" class="header-nav-link-deafault">
+                            <a href="#ServiceProcess" class="header-nav-link-deafault" @click="toggleNavBar()">
                                 服務流程
                             </a>
                         </div>
                         <div class="header-nav-block-default">
-                            <a href="#ServicePlanBlock" class="header-nav-link-deafault">
+                            <a href="#ServicePlanBlock" class="header-nav-link-deafault" @click="toggleNavBar()">
                                 服務項目
                             </a>
                         </div>
                         <div class="header-nav-block-default">
-                            <a href="#ClassicSampleBlock" class="header-nav-link-deafault">
+                            <a href="#ClassicSampleBlock" class="header-nav-link-deafault" @click="toggleNavBar()">
                                 經典範例
                             </a>
                         </div>
                         <div class="header-nav-block-default">
-                            <a href="#CustomerFeedback" class="header-nav-link-deafault">
+                            <a href="#CustomerFeedback" class="header-nav-link-deafault" @click="toggleNavBar()">
                                 顧客回饋
                             </a>
                         </div>
                         <div class="header-nav-block-default">
-                            <a href="#CommonQuestion" class="header-nav-link-deafault">
+                            <a href="#CommonQuestion" class="header-nav-link-deafault" @click="toggleNavBar()">
                                 Q&amp;A
                             </a>
                         </div>
@@ -55,7 +55,7 @@
                     </a>
                 </div>
                 <!-- 手機板選單按鈕 -->
-                <div class="d-sm-none flex-grow-1 horizontal-vertical-center-flex">
+                <div class="d-sm-none flex-grow-1 horizontal-vertical-center-flex mr-4">
                     <button
                         class="header-menu-icon-block p-4"
                         @click="toggleNavBar()"
@@ -268,4 +268,6 @@ export default {
         width: 113px;
         height: 39px;
     }
+
+    
 </style>
