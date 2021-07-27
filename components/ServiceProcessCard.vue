@@ -42,6 +42,13 @@ export default {
         margin: 15px 0;
     }
 
+    @media screen and (max-width: 420px) {
+        .service-process-card {
+            width: 300PX;
+            height: 240px;
+        }
+    }
+
     .service-process-card-icon-block {
         width: 20px;
         height: 100%;
@@ -86,12 +93,24 @@ export default {
         height: 40px;
     }
 
+    @media screen and (max-width: 420px) {
+        .title-block-service-process {
+            margin-top: 4rem;
+        }
+    }
+
     .card-title-text-service-process {
         font-size: 22px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    /* @media screen and (max-width: 420px) {
+        .card-title-text-service-process {
+            font
+        }
+    } */
 
     .card-decription-text-service-process {
         font-size: 15px;
@@ -102,7 +121,25 @@ export default {
         margin-top: 6px;
     }
 
+    @media screen and (max-width: 420px) {
+        .card-decription-text-block-service-process {
+            margin-top: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .card-decription-text-service-process {
+            font-size: .9rem;
+        }
+    }
+
     .right-main-block-service-process {
         padding-left: 0;
+    }
+
+    @media screen and (max-width: 420px) {
+        .right-main-block-service-process {
+            padding-left: .6rem;
+        }
     }
 </style>

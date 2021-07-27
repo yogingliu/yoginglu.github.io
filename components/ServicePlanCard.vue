@@ -1,11 +1,11 @@
 <template>
     <div class="service-plan-card">
         <div class="service-plan-border-bottom-block text-left mx-4 px-3 height-30">
-            <div class="font-size-2 py-3">NT${{planPrice}}</div>
+            <div class="font-size-2 font-size-little-1-point-8 py-3">NT${{planPrice}}</div>
             <div :style="{ color: `${planRepresentColor}` }" class="font-size-1-point-4 my-2">{{planTitle}}</div>
             <p class="white-space-pre-line my-3 text-description-service-plan-card">{{planDescription}}</p>
         </div>
-        <div class="service-plan-border-bottom-block p-5  mx-4  text-left height-50">
+        <div class="service-plan-border-bottom-block p-5  mx-4  text-left height-50 font-size-little-point-9">
             <div
                 v-for="feature in featuresOfProject"
                 :key="`feature-${feature.featureId}`"
@@ -71,6 +71,13 @@ export default {
         }
     }
 
+    @media screen and (max-width: 420px) {
+        .service-plan-card {
+            width: 300PX;
+            height: 850px;
+        }
+    }
+
     .service-plan-border-bottom-block {
         /* margin: 0 35px 0 35px; */
         border-bottom: 1px solid rgba(230, 230, 230, 1);
@@ -80,13 +87,39 @@ export default {
         font-size: 2rem;
     }
 
+    @media screen and (max-width: 420px) {
+        .font-size-little-1-point-8 {
+            font-size: 1.8rem;
+        }
+    }
+
     .font-size-1-point-4 {
         font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 420px) {
+        .font-size-little-1-point-2 {
+            font-size: 1.2rem;
+        }
     }
 
     .text-description-service-plan-card {
         font-size: .8rem;
         line-height: 1.8rem;
+    }
+
+    @media screen and (max-width: 420px) {
+        .text-description-service-plan-card {
+            font-size: .7rem;
+        }
+    }
+
+    
+
+    @media screen and (max-width: 420px) {
+        .font-size-little-point-9 {
+            font-size: .9rem;
+        }
     }
 
     .white-space-pre-line {

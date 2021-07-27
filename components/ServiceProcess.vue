@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mx-auto">
         <SectionTitle :titleText="'服務流程'"/>
         <div class="service-process-section-block">
             <template v-for="(serviceProcessCardBody, serviceProcessCardIndex) in serviceProcessCardBodys">

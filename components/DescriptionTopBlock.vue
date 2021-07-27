@@ -87,7 +87,7 @@ export default {
 
     @media screen and (max-width: 576px) {
         .description-top-main-block {
-            margin: 90px 60px;
+            margin: 50px 60px;
         }
     }
 
