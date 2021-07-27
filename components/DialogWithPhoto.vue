@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column mx-5">
+            <div class="d-flex flex-column dialog-content-block-section">
                     <template v-for="(dialogText, dialogIndex) in dialogTexts">
                         <div
                             :key="`dialog-text-${dialogBlockIndex}-${dialogIndex}`"
@@ -77,6 +77,16 @@ export default {
 }
 </script>
 <style scoped>
+    .dialog-content-block-section {
+        margin: 0 3rem;
+    }
+
+    @media screen and (max-width: 420px) {
+        .dialog-content-block-section {
+            margin: 0 1.2rem;
+        }
+    }
+
     .dialog-photo {
         width: 225px;
         height: 225px;

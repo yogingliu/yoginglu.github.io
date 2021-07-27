@@ -83,6 +83,13 @@ export default {
         }
     }
 
+    @media screen and (max-width: 420px) {
+        .customer-feedback-card {
+            width: 300px;
+        }
+    }
+
+
     .customer-feedback-card-photo {
         width: 6rem;
         height: 6rem;
