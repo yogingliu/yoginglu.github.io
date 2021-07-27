@@ -42,7 +42,14 @@ export default {
 
     @media screen and (max-width: 576px) {
         .demo-block-title {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
+            margin-top: 9rem;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .demo-block-title {
+            font-size: 1.2rem;
             margin-top: 9rem;
         }
     }
@@ -63,6 +70,13 @@ export default {
             flex-direction: column;
         }
     }
+
+    @media screen and (max-width: 420px) {
+        .tip-process-block {
+            margin-top: 30px;
+        }
+    }
+
 
     
 

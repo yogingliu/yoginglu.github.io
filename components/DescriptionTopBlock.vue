@@ -91,8 +91,22 @@ export default {
         }
     }
 
+    @media screen and (max-width: 420px) {
+        .description-top-main-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
     .decription-text-block {
         margin: 40px 0 0 5px;
+    }
+
+    @media screen and (max-width: 420px) {
+        .decription-text-block {
+            font-size: 0.8rem;
+        }
     }
 
     .description-top-shop-link {
@@ -131,7 +145,13 @@ export default {
     }
     @media screen and (max-width: 576px) {
         .description-top-main-title {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .description-top-main-title {
+            font-size: 1.2rem;
         }
     }
 </style>

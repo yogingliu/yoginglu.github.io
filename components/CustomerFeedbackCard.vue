@@ -14,7 +14,7 @@
                 
             </div>
         </div>
-        <div class="d-flex px-5">
+        <div class="d-flex feedback-content-and-quote-block">
             <div class="mt-3 mx-2">
                 <SvgIconQuote class="feedback-card-quote-icon" />
             </div>
@@ -66,6 +66,16 @@ export default {
 }
 </script>
 <style scoped>
+    .feedback-content-and-quote-block {
+        padding: 0 3rem;
+    }
+
+    @media screen and (max-width: 420px) {
+        .feedback-content-and-quote-block {
+            padding: 0 1rem;
+        }
+    }
+
     .customer-feedback-card {
         min-width: 5rem;
         min-height: 5rem;

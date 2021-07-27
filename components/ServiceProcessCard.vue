@@ -45,7 +45,7 @@ export default {
     @media screen and (max-width: 420px) {
         .service-process-card {
             width: 300PX;
-            height: 240px;
+            height: 180px;
         }
     }
 
@@ -95,7 +95,7 @@ export default {
 
     @media screen and (max-width: 420px) {
         .title-block-service-process {
-            margin-top: 4rem;
+            margin-top: 2.4rem;
         }
     }
 
@@ -106,11 +106,11 @@ export default {
         justify-content: center;
     }
 
-    /* @media screen and (max-width: 420px) {
+    @media screen and (max-width: 420px) {
         .card-title-text-service-process {
-            font
+            font-size: 1.2rem;
         }
-    } */
+    }
 
     .card-decription-text-service-process {
         font-size: 15px;
@@ -129,7 +129,7 @@ export default {
 
     @media screen and (max-width: 420px) {
         .card-decription-text-service-process {
-            font-size: .9rem;
+            font-size: .8rem;
         }
     }
 

@@ -6,6 +6,7 @@
                 :key="`dialog-with-photo-component-${dialogBlockIndex}`"
                 :dialogBlockIndex="dialogBlockIndex"
                 v-bind="dialogWithPhotoBody"
+                :isLastOne="dialogBlockIndex === dialogWithPhotoBodys.length-1"
             />
         </template>
     </div>

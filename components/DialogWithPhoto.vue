@@ -1,7 +1,7 @@
 <template>
     <div>
         <div :class="{'d-flex': true, 'my-4': true, 'flex-row-reverse': placeType === PLACE_TYPE_RIGHT}">
-            <div class="horizontal-vertical-center-flex">
+            <div class="horizontal-vertical-center-flex" :style="{display: isLastOne? 'none':'flex'}">
                 <!-- dialog and text -->
                 <div class="horizontal-vertical-center-flex flex-column">
                     <div>
@@ -65,6 +65,10 @@ export default {
             type: Number,
             required: true
         },
+        isLastOne: {
+            type: Boolean,
+            default: false
+        }
 
     },
     computed: {
