@@ -5,12 +5,12 @@
             <template v-for="(questionAndAnswerBody, questionAndAnswerIndex) in questionAndAnswerBodys">
                 <div
                     :key="`question-and-answer-block-${questionAndAnswerIndex}`"
-                    class="question-and-answer-block text-left p-3 my-4"
+                    class="question-and-answer-block text-left"
                 >
-                    <div class="h5 mb-4">
+                    <div class="question-and-answer-block-question-text mb-4">
                         <span>Q：{{questionAndAnswerBody.question}}</span>
                     </div>
-                    <div class="font-size-point-nine">
+                    <div class="question-and-answer-block-answer-text font-size-point-nine">
                         <span>A：{{questionAndAnswerBody.answer}}</span>
                     </div>
                 </div>
@@ -60,5 +60,31 @@ export default {
     .question-and-answer-block {
         box-shadow: 0px .2rem .2rem rgba(0, 0, 0, 0.25);
         border-radius: .4rem;
+        padding: 1rem;
+        margin: 1.5rem auto;
+    }
+
+    @media screen and (max-width: 576px) {
+        .question-and-answer-block {
+            font-size: 1rem;
+            padding: 3rem;
+            margin: 5rem auto;
+        }
+    }
+
+    .question-and-answer-block-question-text {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        .question-and-answer-block-question-text {
+            font-size: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .question-and-answer-block-answer-text {
+            font-size: .8rem;
+        }
     }
 </style>

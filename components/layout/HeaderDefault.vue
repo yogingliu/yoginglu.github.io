@@ -122,21 +122,35 @@ export default {
         z-index: 1;
     }
 
-    @media screen and (max-width: 576px) {
+    /* @media screen and (max-width: 576px) {
         .header-default {
-            width: auto;
+            width: 576px;
             max-width: 576px;
-            /* width: 100%; */
+            padding-right: 60px;
         }
 
         
-    }
+    } */
 
     .header-flex-block-default {
         width: 100%;
         height: 95px;
         background: #FFFFFF;
         display: flex;
+    }
+
+    @media screen and (max-width: 576px) {
+        .header-flex-block-default {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+    }
+
+    @media screen and (max-width: 420px) {
+        .header-flex-block-default {
+            width: 340PX;
+        }
     }
 
     

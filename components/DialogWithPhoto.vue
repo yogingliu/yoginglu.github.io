@@ -7,7 +7,7 @@
                     <div>
                         <component :is="photoComponent" class="dialog-photo" />
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-2 photo-text">
                         {{photoText}}
                     </div>
                 </div>
@@ -82,6 +82,24 @@ export default {
         height: 225px;
 
     }
+
+    @media screen and (max-width: 576px) {
+        .dialog-photo {
+            width: 60px;
+            height: 60px;
+        }
+
+        .photo-text {
+
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .photo-text {
+            font-size: 0.5rem;
+        }
+    }
+
 
     .dialog-content-block {
         border-radius: 0.5rem;

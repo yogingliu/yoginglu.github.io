@@ -1,5 +1,5 @@
 <template>
-    <div class="customer-feedback-card flex-grow-1 mx-3 w-100">
+    <div class="customer-feedback-card flex-grow-1">
         <div class="d-flex w-100 p-4">
             <component class="customer-feedback-card-photo" :is="customerPhotoComponent" />
             <div class="ml-4 text-left d-flex">
@@ -71,6 +71,16 @@ export default {
         min-height: 5rem;
         box-shadow: 0px .8rem 1.2rem rgba(41, 41, 42, 0.07);
         border-radius: .5rem;
+        width: 100%;
+        margin: 0 1rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        .customer-feedback-card {
+            min-width: auto;
+            width: 350px;
+            margin: 15px auto;
+        }
     }
 
     .customer-feedback-card-photo {

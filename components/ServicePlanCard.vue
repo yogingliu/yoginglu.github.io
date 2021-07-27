@@ -65,6 +65,12 @@ export default {
         background-color: #ffffff;
     }
 
+    @media screen and (max-width: 576px) {
+        .service-plan-card {
+            margin: 30px auto;
+        }
+    }
+
     .service-plan-border-bottom-block {
         /* margin: 0 35px 0 35px; */
         border-bottom: 1px solid rgba(230, 230, 230, 1);

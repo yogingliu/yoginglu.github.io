@@ -231,4 +231,10 @@ export default {
         display: flex;
         justify-content: space-around;
     }
+
+    @media screen and (max-width: 576px) {
+        .service-plan-card-section {
+            flex-direction: column;
+        }
+    }
 </style>

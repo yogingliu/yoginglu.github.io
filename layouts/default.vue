@@ -131,6 +131,18 @@ p {
   text-align: center;
 }
 
+@media screen and (max-width: 576px) {
+    .container {
+      width: 400PX;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+      width: 340PX;
+    }
+}
+
 .horizontal-vertical-center-flex {
   display: flex;
   align-items: center;

@@ -1,7 +1,7 @@
 <template>
     <div class="w-100">
         <SectionTitle :titleText="'顧客回饋'"/>
-        <div class="d-flex w-100">
+        <div class="d-flex w-100 customer-feedback-block">
             <template v-for="(customerFeedbackCardBodys, customerFeedbackCardIndex) in customerFeedbackCardBodys">
                 <CustomerFeedbackCard
                     :key="`customerFeedbackCard-${customerFeedbackCardIndex}`"
@@ -43,3 +43,10 @@ export default {
     }
 }
 </script>
+<style scoped>
+    @media screen and (max-width: 576px) {
+        .customer-feedback-block {
+            flex-direction: column;
+        }
+    }
+</style>

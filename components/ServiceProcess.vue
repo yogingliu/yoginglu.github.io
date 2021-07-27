@@ -6,6 +6,7 @@
                 <div 
                     :key="`ServiceProcessCard-${serviceProcessCardBody.indexNum}`"
                     :style="{ marginLeft: `${serviceProcessCardIndex * 200}px` }"
+                    class="service-process-card-block"
                 >
                     <ServiceProcessCard
                         v-bind="serviceProcessCardBody"
@@ -76,5 +77,11 @@ export default {
 <style scoped>
     .service-process-section-block {
         display: inline-block;
+    }
+
+    @media screen and (max-width: 576px) {
+        .service-process-card-block {
+            margin: 0 auto !important;
+        }
     }
 </style>

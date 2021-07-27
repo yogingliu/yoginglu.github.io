@@ -1,6 +1,6 @@
 <template>
     <div class="tip-demo-block">
-        <h2>做備審資料可以很簡單，只要 ......</h2>
+        <h2 class="demo-block-title">做備審資料可以很簡單，只要 ......</h2>
         <div class="tip-process-block">
             <div class="tip-phone-block">
                 <p class="text-move-for-phone-shadow">
@@ -39,6 +39,13 @@ export default {
 }
 </script>
 <style scoped>
+
+    @media screen and (max-width: 576px) {
+        .demo-block-title {
+            font-size: 1.8rem;
+        }
+    }
+
     .tip-demo-block {
         /* max-height: 650px; */
     }
@@ -50,11 +57,24 @@ export default {
         margin-top: 80px;
     }
 
+    @media screen and (max-width: 576px) {
+        .tip-process-block {
+            flex-direction: column;
+        }
+    }
+
     
 
     .tip-phone-block {
         width: 22%;
         /* height: 600px; */
+    }
+
+    @media screen and (max-width: 576px) {
+        .tip-phone-block {
+            display: flex;
+            width: 100%;
+        }
     }
 
     .tip-phone-pic-block {
@@ -63,6 +83,12 @@ export default {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    @media screen and (max-width: 576px) {
+        .tip-phone-pic-block {
+            width: 60%;
+        }
     }
 
     .tip-phone-svg {
@@ -87,10 +113,26 @@ export default {
         margin-bottom: 0;
     }
 
+    @media screen and (max-width: 576px) {
+        .text-move-for-phone-shadow {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
     .tip-arrow-block {
         /* width: 17%; */
         /* height: 600px; */
         margin: 0 50px;
+    }
+
+    @media screen and (max-width: 576px) {
+        .tip-arrow-block {
+            display: none;
+        }
     }
 
     .trangle-right-arrow {
