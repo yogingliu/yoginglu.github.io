@@ -96,6 +96,8 @@ export default {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin: 90px auto;
+            width: auto;
         }
     }
 

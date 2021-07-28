@@ -49,7 +49,7 @@ export default {
 
     @media screen and (max-width: 420px) {
         .demo-block-title {
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-top: 9rem;
         }
     }
