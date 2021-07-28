@@ -66,8 +66,10 @@
                 </div>
             </div>
         </div>
+        <!-- 為了藏在 fix header 後面的
+        但有些瀏覽器 (手機?) 能夠硬拉出奇怪高度看到這段文字 所以乾脆當彩蛋 -->
         <div class="fixed-header-back">
-            不該看到這段文字
+            What r u looking for 🤨
         </div>
     </div>
 </template>
