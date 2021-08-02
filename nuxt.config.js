@@ -14,6 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'author', content: 'BigWhite' },
       { hid: 'description', name: 'description', content: `即將進行大學申請或是研究所推甄的你
       具備了很好的成績以及輝煌的經歷
       但是卻對於製作備審資料感到困惑嗎？
