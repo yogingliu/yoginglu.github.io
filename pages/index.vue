@@ -43,7 +43,7 @@ export default {
 <style scoped>
 @media screen and (max-width: 576px) {
   .web-background {
-    background-image: url('./sm-background.svg');
+    background-image: url('/yugeng/sm-background.svg');
     background-size: cover;
 
   }

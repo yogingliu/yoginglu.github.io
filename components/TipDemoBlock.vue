@@ -112,15 +112,15 @@ export default {
     }
 
     .tip-phone-block:nth-child(1) .tip-phone-pic-block {
-        background-image: url('./tipPhone/tipPhone1.png');
+        background-image: url('/yugeng/tipPhone/tipPhone1.png');
     }
 
     .tip-phone-block:nth-child(3) .tip-phone-pic-block {
-        background-image: url('./tipPhone/tipPhone2.png');
+        background-image: url('/yugeng/tipPhone/tipPhone2.png');
     }
 
     .tip-phone-block:nth-child(5) .tip-phone-pic-block {
-        background-image: url('./tipPhone/tipPhone3.png');
+        background-image: url('/yugeng/tipPhone/tipPhone3.png');
     }
 
     .text-move-for-phone-shadow {
