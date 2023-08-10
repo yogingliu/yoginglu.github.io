@@ -22,7 +22,7 @@
                 <div>
                     <span class="top-shop-link-text">與專員進行詳細洽談</span>
                 </div>
-                
+
             </a>
         </div>
         <div class="description-top-right-decoration d-none d-sm-block">
@@ -80,7 +80,7 @@ export default {
     .description-top-main-block {
         /* margin: 165px 0 150px 0; */
         margin: 185px 0 150px 150px;
-        width: 580px;
+        width: 570px;
         height: 350px;
         text-align: left;
     }
@@ -131,7 +131,7 @@ export default {
             /* margin: 40px auto; */
             display: none;
         }
-        
+
     }
 
     .top-shop-link-text {
@@ -143,7 +143,7 @@ export default {
         width: 15px;
         height: 20.8px;
         margin: 1.5px 1.5px 0 1.5px;
-        
+
     }
     @media screen and (max-width: 576px) {
         .description-top-main-title {
