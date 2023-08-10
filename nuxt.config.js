@@ -1,5 +1,7 @@
 export default {
-  base: '/yugeng/',
+  env: {
+    baseURL: '/yugeng/'
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
