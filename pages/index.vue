@@ -2,7 +2,7 @@
   <div class="position-relative web-background">
     <DescriptionTopBlock id="DescriptionTopBlock"/>
     <div class="container">
-      
+
       <TipDemoBlock id="TipDemoBlock" />
       <ProductFeature id="ProductFeature" />
       <ServiceProcess id="ServiceProcess" />
@@ -43,9 +43,9 @@ export default {
 <style scoped>
 @media screen and (max-width: 576px) {
   .web-background {
-    background-image: url('/sm-background.svg');
+    background-image: url('./sm-background.svg');
     background-size: cover;
-      
+
   }
 }
 </style>
