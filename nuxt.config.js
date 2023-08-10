@@ -1,4 +1,11 @@
 export default {
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
+  },
+  router: {
+    base: '/yugeng/'
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -53,9 +60,4 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
   ],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    publicPath: '/yugeng/'
-  }
 }
